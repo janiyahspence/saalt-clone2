@@ -386,7 +386,7 @@ export const properties: Property[] = [
         capacity: 2,
         price: '₹1,499',
         amenities: ['Free WiFi', 'AC', 'TV', 'Daily Housekeeping', 'Room Service'],
-        images: ['https://images.unsplash.com/photo-1631049035182-249067d7618e?w=800'],
+        images: ['/saalt-deoghar-standard-room.jpg'],
       },
       {
         name: 'Deluxe Room',
@@ -395,7 +395,7 @@ export const properties: Property[] = [
         capacity: 2,
         price: '₹1,999',
         amenities: ['Free WiFi', 'AC', 'LCD TV', 'Mini Fridge', 'Premium Bedding', 'Seating Area'],
-        images: ['https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800'],
+        images: ['/saalt-deoghar-deluxe-room_1.jpg'],
       },
       {
         name: 'Premium Room',
@@ -404,7 +404,7 @@ export const properties: Property[] = [
         capacity: 3,
         price: '₹2,499',
         amenities: ['Free WiFi', 'AC', 'Smart TV', 'Mini Bar', 'Premium Bedding', 'Work Desk', 'Seating Area', 'Extra Space'],
-        images: ['https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800'],
+        images: ['/saalt-deoghar-premium-room.jpg'],
       },
     ],
     amenities: [
