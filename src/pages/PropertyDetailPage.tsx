@@ -4,6 +4,7 @@ import { properties } from '../data/properties';
 import { VideoHero } from '../components/VideoHero';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { Button } from '../components/Button';
+import { openWhatsAppBooking } from '../utils/whatsapp';
 import {
   MapPin,
   Phone,
@@ -207,13 +208,9 @@ Message: ${formData.message || 'N/A'}`;
                         <Button
                           variant="primary"
                           size="sm"
-                          onClick={() => {
-                            setSelectedRoom(index);
-                            setFormData({ ...formData, roomType: room.name });
-                            document.getElementById('booking-form')?.scrollIntoView({ behavior: 'smooth' });
-                          }}
+                          onClick={() => openWhatsAppBooking(property.id, property.name, room.name)}
                         >
-                          Select This Room
+                          Book This Room
                         </Button>
                       </div>
                     </div>

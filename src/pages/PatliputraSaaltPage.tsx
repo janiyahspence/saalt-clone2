@@ -4,6 +4,7 @@ import { VideoHero } from '../components/VideoHero';
 import { Button } from '../components/Button';
 import { TestimonialCard } from '../components/TestimonialCard';
 import { properties } from '../data/properties';
+import { openWhatsAppBooking } from '../utils/whatsapp';
 import {
   MapPin, Phone, Mail, Star, Bed, Users, Check, Calendar, Clock,
   Wifi, ParkingCircle, UtensilsCrossed, Dumbbell, Sparkles, Shield,
@@ -305,8 +306,8 @@ export const PatliputraSaaltPage: React.FC = () => {
                           <p className="text-3xl font-bold text-[#1a472a]">{room.price}</p>
                           <p className="text-sm text-gray-600">per night</p>
                         </div>
-                        <Button variant="primary" size="md" onClick={() => window.open(`https://wa.me/919709633313?text=I want to book ${room.name} at Patliputra Saalt`, '_blank')}>
-                          Book Room
+                        <Button variant="primary" size="md" onClick={() => openWhatsAppBooking(property.id, property.name, room.name)}>
+                          Book This Room
                         </Button>
                       </div>
                     </div>
